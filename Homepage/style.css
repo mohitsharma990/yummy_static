@@ -1,0 +1,117 @@
+.bg-image {
+    background-image: url('assets/bg_image.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+    background: rgba(255, 255, 255, 0); /* Transparent background */
+    backdrop-filter: blur(10px); Optional: Adds a blur effect
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #d9534f; 
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d9534f; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the text */
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d9534f; /* Blue underline */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Expand the underline on hover */
+  }
+
+a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    }
+
+
+.logo-text {
+    font-size: 1.5rem;
+}
+.logo-icon {
+    font-size: 1.3rem; 
+}
+
+
+.btn-order-now {
+    background-color: #ff4c4c; /* Red color */
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order-now:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    color: white;
+}
+
+  .card {
+    border-radius: 170px 170px 30px 30px;
+    overflow: hidden; /* Ensures the content stays within the rounded corners */
+  }
+
+  .card-img-top {
+    border-top-left-radius: 170px;
+    border-top-right-radius: 170px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    position: relative;
+  }
+  
+  .rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .card-price {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    color: #555;
+  }
