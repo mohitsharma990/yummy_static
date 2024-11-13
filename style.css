@@ -115,3 +115,10 @@ a {
   .card-description {
     color: #555;
   }
+
+
+  @media screen and (min-width: 990px) {
+    .nav-link {
+        color: black !important;
+    }
+}
